@@ -1,4 +1,19 @@
-const clickBtn = document.querySelector("#clickHere")
+// document.querySelector("#clickHere").addEventListener('click', function (event) {
+    async function getDegrees(url) {
+        // fetch the url
+        await fetch(url)
+          //get your data here, and check for the response status. If it's not 200, throw an error
+          .then((response) => response.json())
+          .then((data) =>
+            document.write(
+              `My first degree was a ${data.data[0].degrees.masters.data.type} from ${data.data[0].degrees.masters.data.school} in ${data.data[0].degrees.masters.data.program}`
+            )
+          )
+      }
+      
+      getDegrees("./degrees.json")
+// }
+// )
 // const result = document.querySelector('#result')
 
 // gets data from API and sets the content of #result div
@@ -20,21 +35,21 @@ const clickBtn = document.querySelector("#clickHere")
 // }
 
 // if (onclick.clickBtn) {
-async function getDegrees(url) {
-    // fetch the url
-    await fetch(url)
-      //get your data here, and check for the response status. If it's not 200, throw an error
-      .then((response) => response.json())
-      .then((data) =>
-        document.write(
-          `My first degree was a ${data.data[0].degrees.masters.data.type} from ${data.data[0].degrees.masters.data.school} in ${data.data[0].degrees.masters.data.program}`
-        )
-      )
-  }
+// async function getDegrees(url) {
+//     // fetch the url
+//     await fetch(url)
+//       //get your data here, and check for the response status. If it's not 200, throw an error
+//       .then((response) => response.json())
+//       .then((data) =>
+//         document.write(
+//           `My first degree was a ${data.data[0].degrees.masters.data.type} from ${data.data[0].degrees.masters.data.school} in ${data.data[0].degrees.masters.data.program}`
+//         )
+//       )
+//   }
 
-if (clickBtn) {
-    clickBtn.addEventListener(getDegrees)
-}
+// if (clickBtn) {
+//     getDegrees("./degrees.json")
+// }
 //   const callFunction = getDegrees("./degrees.json");
 
 //   clickBtn.addEventListener(getDegrees)
