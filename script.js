@@ -32,7 +32,9 @@ async function getDegrees(url) {
       )
   }
 
-  getDegrees("./degrees.json");
+  const callFunction = getDegrees("./degrees.json");
+  
+  clickBtn.addEventListener(callFunction)
 
 
 //   clickBtn.addEventListener('./degrees.json', getData)
