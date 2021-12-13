@@ -1,3 +1,6 @@
+var clickBtn = document.getElementById("clickHere")
+
+if (onclick.clickBtn) {
 async function getDegrees(url) {
     // fetch the url
     await fetch(url)
@@ -8,7 +11,7 @@ async function getDegrees(url) {
           `My first degree was a ${data.data[0].degrees.masters.data.type} from ${data.data[0].degrees.masters.data.school} in ${data.data[0].degrees.masters.data.program}`
         )
       );
-  }
+  }}
   
   getDegrees("./degrees.json");
 
