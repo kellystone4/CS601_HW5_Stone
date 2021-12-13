@@ -1,4 +1,4 @@
-// const clickBtn = document.querySelector("#clickHere")
+const clickBtn = document.querySelector("#clickHere")
 // const result = document.querySelector('#result')
 
 // gets data from API and sets the content of #result div
