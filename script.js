@@ -1,4 +1,4 @@
-// document.querySelector("#clickHere").addEventListener('click', function (event) {
+const runProgram = document.querySelector("#clickHere").addEventListener('click', function (event) {
     async function getDegrees(url) {
         // fetch the url
         await fetch(url)
@@ -16,8 +16,10 @@
       }
 
       getDegrees("./degrees.json")
-// }
-// )
+}
+)
+
+
 // const result = document.querySelector('#result')
 
 // gets data from API and sets the content of #result div

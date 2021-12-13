@@ -1,5 +1,12 @@
-#clickHere {
+/* #clickHere {
     text-align: center;  
     padding: 20px;
+} */
+.container {
+    align-items: center;  
 }
-
+.btn{
+    padding: 2%;
+    background-color: pink;
+    margin: auto;  
+}
