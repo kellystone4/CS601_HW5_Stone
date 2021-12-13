@@ -1,0 +1,21 @@
+{
+    "myDegrees": [
+        { 
+        "degree": {
+        "school": "Boston University",
+        "program": "Software Development",
+        "type": "M.S.",
+        "yearConferred": "2022"
+       }
+     },
+     {
+        "degree": {
+        "school": "San Francisco State University",
+        "program": "Business Management",
+        "type": "B.S.",
+        "yearConferred": "2020"
+       }
+    }
+    ]
+ }
+
