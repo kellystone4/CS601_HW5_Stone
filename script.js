@@ -14,7 +14,7 @@ async function getDegrees(url) {
   }
 // }
   
-//   getDegrees("./degrees.json");
+  getDegrees("./degrees.json");
 
 
 // function writeStuff(words) {
